@@ -27,13 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning  className={`${geistMono.className} ${geistSans.className} antialiased`}>
+      <body suppressHydrationWarning  className={`${geistMono.className} ${geistSans.className} bg-zinc-950 text-zinc-100 antialiased`}>
         <div className="flex min-h-screen">
           {/* Sidebar — handles its own positioning internally */}
           <Sidebar/>
 
           {/* Right side */}
-          <div className="md:ml-64 flex min-h-screen flex-1 flex-col">
+          <div className="md:ml-64 flex min-h-screen flex-1 flex-col pb-16 md:pb-0">
             {/* Main */}
             <main className=" bg-black">
               {children}

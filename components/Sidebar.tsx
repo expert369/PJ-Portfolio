@@ -140,8 +140,8 @@ const Sidebar = () => {
       </aside>
 
     {/* Mobile Sidebar */}
-    <div className={ `${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}
-        z-54
+    <div suppressHydrationWarning className={ `${isMobileMenuOpen ? "translate-x-0" : "translate-x-full"}
+        z-[90]
         backdrop-blur-md
         mobile-sidebar 
         fixed right-0 
@@ -200,7 +200,7 @@ const Sidebar = () => {
               ))}
             </ul>
 
-            <div className="mt-8 text-xs text-zinc-500">Connect</div>
+            <div suppressHydrationWarning className="mt-8 text-xs text-zinc-500">Connect</div>
             <ul className="space-y-2 mt-3 text-xs">
               {socials.map(({ label, href, Icon }) => (
                 <li key={label}>
@@ -224,8 +224,8 @@ const Sidebar = () => {
       </div>
 
         {/* Mobile Bottom Nav */}
-        <div suppressHydrationWarning className="md:hidden fixed bottom-0 left-0 right-0 z-50 items-center">
-            <div className="mx-auto w-full px-4 pb-4">
+        <div suppressHydrationWarning className="md:hidden fixed bottom-0 left-0 right-0 z-50 overflow-hidden">
+            <div className="mx-auto w-auto px-4 pb-4">
               <div className="max-w-lg mx-auto">
                     <div className="bg-zinc-900/95 backdrop-blur-sm border border-zinc-800 px-2 py-2 flex items-center gap-2 shadow-2xl shadow-black/40 rounded-xl">
                         <div className="grid grid-cols-6 gap-1 flex-1">
@@ -245,7 +245,7 @@ const Sidebar = () => {
                         </div>
                         <div className="h-6 w-px bg-zinc-800"></div>
                         <button aria-label="Open Menu" onClick={(() => setIsMobileMenuOpen(true))} className="p-2 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 transition-colors">
-                            <TiThMenu />
+                            <TiThMenu className="w-4 h-4"/>
                         </button>
                     </div>
 
