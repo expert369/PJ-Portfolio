@@ -29,10 +29,20 @@ export default function RootLayout({
     <html lang="en">
       <body suppressHydrationWarning  className={`${geistMono.className} ${geistSans.className} antialiased`}>
         <div className="flex min-h-screen">
+          {/* Sidebar — handles its own positioning internally */}
           <Sidebar/>
-          <div className="flex flex-col flex-1">
-            <main className="flex-1">{children}</main>
-            <Footer/>
+
+          {/* Right side */}
+          <div className="md:ml-64 flex min-h-screen flex-1 flex-col">
+            {/* Main */}
+            <main className=" bg-black">
+              {children}
+            </main>
+
+            {/* Footer */}
+            <footer className="flex items-center">
+              <Footer/>
+            </footer>
           </div>
         </div>
       </body>
