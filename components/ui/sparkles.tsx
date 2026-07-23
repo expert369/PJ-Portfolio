@@ -55,7 +55,7 @@ const SparklesCoreInner = (props: ParticlesProps & { controls: LegacyAnimationCo
           id={id || generatedId}
           className={cn("h-full w-full")}
           particlesLoaded={particlesLoaded}
-          options={{
+          options={{...{
             background: {
               color: {
                 value: background || "#0d47a1",
@@ -152,7 +152,6 @@ const SparklesCoreInner = (props: ParticlesProps & { controls: LegacyAnimationCo
               },
               effect: {
                 close: true,
-                fill: true,
                 options: {},
                 type: {} as SingleOrMultiple<string> | undefined,
               },
@@ -423,7 +422,7 @@ const SparklesCoreInner = (props: ParticlesProps & { controls: LegacyAnimationCo
               },
             },
             detectRetina: true,
-          }}
+          }} as any}
         />
       )}
     </motion.div>
