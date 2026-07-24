@@ -7,6 +7,7 @@ import { Cover } from "@/components/ui/cover";
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { useState } from "react";
+import Link from "next/link";
 
 export default function Home() {
   const [ cvButton, setCvButton ] = useState<string>("RESUME")
@@ -100,7 +101,7 @@ export default function Home() {
               </div>
 
               <div className="flex flex-col justify-between gap-4">
-                <div className="text-sm transition-transform duration-300 hover:scale-x-99"><a href="/projects">See My Projects →</a></div>
+                <div className="text-sm transition-transform duration-300 hover:scale-x-99"><Link href="/projects">See My Projects →</Link></div>
                 <div className  ="text-sm transition-transform duration-300 hover:scale-x-99"><a href="https://kokosolutions.vercel.app/" target="_blank">Visit my site →</a></div>
               </div>
 

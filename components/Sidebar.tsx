@@ -243,7 +243,7 @@ const Sidebar = () => {
                             ))}
 
                         </div>
-                        <div className="h-6 w-px bg-zinc-800"></div>
+                        <div suppressHydrationWarning className="h-6 w-px bg-zinc-800"></div>
                         <button aria-label="Open Menu" onClick={(() => setIsMobileMenuOpen(true))} className="p-2 rounded-lg text-zinc-400 hover:text-zinc-200 hover:bg-zinc-800/50 transition-colors">
                             <TiThMenu className="w-4 h-4"/>
                         </button>

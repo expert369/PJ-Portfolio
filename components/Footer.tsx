@@ -21,7 +21,7 @@ const Footer = () => {
             <div className='w-[50%]'><TextHoverEffect text='PETER'/></div>
             <div className='flex items-center gap-8 text-lg font-semibold max-sm:flex-col'>
               <a href="/contact">Reach Out →</a>
-              <div className='text-lg'>{timeNow}</div>
+              <div suppressHydrationWarning className='text-lg'>{timeNow}</div>
             </div>
           </div>
 
