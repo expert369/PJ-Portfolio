@@ -8,9 +8,11 @@ type IconProps = React.SVGProps<SVGSVGElement>
 export type Projects = {
   title: string; 
   description: string; 
-  image: string,
-  url: string,
-  slug: string
+  sub_description: string;
+  image: string;
+  url: string;
+  slug: string;
+  techstack: string[];
 }
 
 export const navItems: { href: string; label: string; Icon: React.ComponentType<IconProps> }[] = [
@@ -41,32 +43,72 @@ export const socials: { label: string, href: string; Icon: React.ComponentType<I
     ];
 
 export const projects: Projects[] = [
-    {
-      title: "Mr.B Cleaning & Services",
-      description: "A responsive cleaning services landing page with Koalender booking integration, enabling customers to easily book cleaning appointments through a fast and intuitive online experience.",
-      image: "/images/mrb.png",
-      url: "https://mrbcleaningservices.com.au/",
-      slug: "mrb-cleaning-services"
-    },
-    {
-      title: "Movie Finder",
-      description: "A responsive cleaning services landing page with Koalender booking integration, enabling customers to easily book cleaning appointments through a fast and intuitive online experience.",
-      image: "/images/moviefinder.png",
-      url: "https://movie-finder-blush.vercel.app/",
-      slug: "movie-finder"
-    },
-    {
-      title: "Lyka Artspace",
-      description: "A responsive cleaning services landing page with Koalender booking integration, enabling customers to easily book cleaning appointments through a fast and intuitive online experience.",
-      image: "/images/lykaartspace.png",
-      url: "https://lykaartspace.netlify.app/",
-      slug: "lyka-artspace"
-    },
-    {
-      title: "KOKO Solutions",
-      description: "A responsive cleaning services landing page with Koalender booking integration, enabling customers to easily book cleaning appointments through a fast and intuitive online experience.",
-      image: "/images/koko.png",
-      url: "https://kokosolutions.vercel.app/",
-      slug: "koko-solutions"
-    },
-  ]
+  {
+    title: "Mr.B Cleaning & Services",
+    sub_description: "Cleaning Services Website",
+    description:
+      "A modern cleaning services website built for an Australian business, featuring online booking integration, responsive design, and optimized landing pages to increase customer conversions.",
+    image: "/images/mrb.png",
+    url: "https://mrbcleaningservices.com.au/",
+    slug: "mrb-cleaning-services",
+    techstack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Koalendar",
+      "Responsive Design",
+      "SEO",
+    ],
+  },
+  {
+    title: "Movie Finder",
+    sub_description: "Movie Discovery Web App",
+    description:
+      "A movie discovery web application that lets users search for films, browse trending titles, and view detailed movie information through a clean and responsive interface.",
+    image: "/images/moviefinder.png",
+    url: "https://movie-finder-blush.vercel.app/",
+    slug: "movie-finder",
+    techstack: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "TMDB API",
+      "REST API",
+      "Responsive Design",
+    ],
+  },
+  {
+    title: "Lyka Artspace",
+    sub_description: "Creative Portfolio Landing Page",
+    description:
+      "A visually engaging landing page for an art and creative brand, designed to showcase artwork, services, and brand identity with smooth animations and a modern user experience.",
+    image: "/images/lykaartspace.png",
+    url: "https://lykaartspace.netlify.app/",
+    slug: "lyka-artspace",
+    techstack: [
+      "React",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Responsive Design",
+      "Landing Page",
+      "UI/UX",
+    ],
+  },
+  {
+    title: "KOKO Solutions",
+    sub_description: "Software Company Website",
+    description:
+      "A professional software solutions company website showcasing services, technologies, and digital transformation solutions with a modern and responsive design.",
+    image: "/images/koko.png",
+    url: "https://kokosolutions.vercel.app/",
+    slug: "koko-solutions",
+    techstack: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "Framer Motion",
+      "Vercel",
+    ],
+  },
+];

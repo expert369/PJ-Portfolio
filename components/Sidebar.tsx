@@ -116,7 +116,7 @@ const Sidebar = () => {
               ))}
             </ul>
 
-            <div className="mt-8 text-xs text-zinc-500">Connect</div>
+            <div suppressHydrationWarning className="mt-8 text-xs text-zinc-500">Connect</div>
             <ul className="space-y-2 mt-3 text-xs">
               {socials.map(({ label, href, Icon }) => (
                 <li key={label}>
