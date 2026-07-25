@@ -13,7 +13,7 @@ export default function Experience() {
                 Changelog from my Journey
             </div>
             <div className='text-zinc-600 text-md font-semibold px-2'>
-            My professional journey building enterprise applications, automating business processes, and developing scalable software solutions. Each milestone reflects the technologies I've mastered, the challenges I've solved, and the value I've delivered to businesses.
+            My professional journey building enterprise applications, automating business processes, and developing scalable software solutions. Each milestone reflects the technologies I&apos;ve mastered, the challenges I&apos;ve solved, and the value I&apos;ve delivered to businesses.
             </div>
             <div className='flex gap-6 text-sm max-sm:grid max-sm:grid-cols-2'>
                 <div className='flex gap-2 items-center'>

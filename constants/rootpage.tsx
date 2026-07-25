@@ -110,7 +110,7 @@ export const projects: Projects[] = [
     description:
       "A professional software solutions company website showcasing services, technologies, and digital transformation solutions with a modern and responsive design.",
     image: "/images/koko.png",
-    url: "https://  kokosolutions.vercel.app/",
+    url: "https://kokosolutions.vercel.app/",
     slug: "koko-solutions",
     techstack: [
       "Next.js",
