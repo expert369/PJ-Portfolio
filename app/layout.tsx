@@ -16,8 +16,12 @@ const geistMono = Geist_Mono({
 });
  
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Peter John Alado | Portfolio",
   description: "Personal Portfolio",
+  icons: {
+    icon: "/robotic-hand.png",
+  },
+
 };
 
 export default function RootLayout({
@@ -26,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning  className={`${geistMono.className} ${geistSans.className} bg-zinc-950 text-zinc-100 antialiased`}>
         <div className="flex min-h-screen">
           {/* Sidebar — handles its own positioning internally */}

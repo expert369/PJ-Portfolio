@@ -2,6 +2,7 @@ import { notFound } from "next/navigation"
 import { projects } from "@/constants/rootpage";
 import { Button } from "@/components/ui/moving-border";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+import Image from "next/image";
 import Link from "next/link";
 
 type Props = {
@@ -48,7 +49,7 @@ export default async function ProjectPage({ params }: Props) {
                 </div>
             </div>
             <div className="z-10 mb-4">
-                <img className="shadow-lg shadow-zinc-700 border-zinc-950 border-2 rounded-lg" src={project.image} alt={project.title} />
+                <Image width={1200} height={700} className="shadow-lg shadow-zinc-700 border-zinc-950 border-2 rounded-lg" src={project.image} alt={project.title} />
             </div>
             <div>
                 <div className="text-2xl font-bold text-zinc-100 mb-4">

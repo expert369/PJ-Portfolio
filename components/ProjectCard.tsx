@@ -13,7 +13,7 @@ export function ProjectCard({projects}: PageCardProps) {
   return (
     <div
       onClick={() => router.push(`/projects/${projects.slug}`)} 
-      className="mx-auto w-87 z-20"
+      className="mx-auto w-87 z-20 h-full"
     >
       <FollowerPointerCard
         title={
@@ -22,8 +22,9 @@ export function ProjectCard({projects}: PageCardProps) {
             avatar={projects.image}
           />
         }
+        className="h-full"
       >
-        <div className="group relative h-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 transition duration-200 hover:shadow-xl">
+        <div className="group relative flex flex-col h-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 transition duration-200 hover:shadow-xl">
           <div className="relative aspect-[16/10] w-full overflow-hidden rounded-tl-lg rounded-tr-lg bg-zinc-950">
             <Image
               src={projects.image}
@@ -32,11 +33,11 @@ export function ProjectCard({projects}: PageCardProps) {
               className="h-full transform object-cover transition duration-200 group-hover:scale-95 group-hover:rounded-2xl"
             />
           </div>
-          <div className="px-4 mb-6">
+          <div className="flex flex-col flex-1 px-4 mb-6">
             <h2 className="my-4 text-xl font-bold text-zinc-200">
               {projects.title}
             </h2>
-            <h2 className="my-4 text-sm font-normal text-zinc-400 border-b pb-6 border-zinc-800">
+            <h2 className="flex-1 my-4 text-sm font-normal text-zinc-400 border-b pb-6 border-zinc-800">
               {projects.description}
             </h2>
             <div className="flex gap-4 mb-0">

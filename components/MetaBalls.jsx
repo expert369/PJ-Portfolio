@@ -273,7 +273,7 @@ const MetaBalls = ({
     enableTransparency
   ]);
 
-  return <div ref={containerRef} className={`metaballs-container ${className}`} />;
+  return <div suppressHydrationWarning ref={containerRef} className={`metaballs-container ${className}`} />;
 };
 
 export default MetaBalls;

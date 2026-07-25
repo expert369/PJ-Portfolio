@@ -229,7 +229,7 @@ const Sidebar = () => {
               <div className="max-w-lg mx-auto">
                     <div className="bg-zinc-900/95 backdrop-blur-sm border border-zinc-800 px-2 py-2 flex items-center gap-2 shadow-2xl shadow-black/40 rounded-xl">
                         <div className="grid grid-cols-6 gap-1 flex-1">
-{navItems.map(({ href, Icon }) => (
+                            {navItems.map(({ href, Icon }) => (
                                 <Link 
                                     key={href} 
                                     href={href} 
