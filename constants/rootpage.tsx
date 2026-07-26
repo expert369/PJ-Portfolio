@@ -9,6 +9,12 @@ import type { ReactNode } from "react";
 
 type IconProps = React.SVGProps<SVGSVGElement>
 
+export type Tools = {
+  title: string;
+  description: string;
+  href: string;
+}
+
 export type Projects = {
   title: string; 
   description: string; 
@@ -287,5 +293,113 @@ export const data: ExperienceDetails[] = [
         </div>
       </div>
     ),
+  },
+];
+
+export const tools: Tools[] = [
+  {
+    title: "Cursor",
+    description: "AI Code Editor",
+    href: "/images/icons/cursor.webp",
+  },
+  {
+    title: "ChatGPT",
+    description: "AI Assistant",
+    href: "/images/icons/chatgpt.webp",
+  },
+  {
+    title: "Claude",
+    description: "AI Assistant",
+    href: "/images/icons/claude.png",
+  },
+  {
+    title: "OpenCode",
+    description: "AI Coding Agent",
+    href: "/images/icons/opencode-wordmark-dark.png",
+  },
+  {
+    title: "VS Code",
+    description: "Code Editor",
+    href: "/images/icons/vscode.webp",
+  },
+  {
+    title: "Git",
+    description: "Version Control",
+    href: "/images/icons/Git-Icon-1788C.png",
+  },
+  {
+    title: "GitHub",
+    description: "Code Hosting",
+    href: "/images/icons/github.webp",
+  },
+  {
+    title: "Docker",
+    description: "Containerization",
+    href: "/images/icons/docker.png",
+  },
+  {
+    title: "Ubuntu",
+    description: "Linux Environment",
+    href: "/images/icons/ubuntu-logo.png",
+  },
+  {
+    title: "WSL",
+    description: "Windows Subsystem for Linux",
+    href: "/images/icons/wsl.webp",
+  },
+  {
+    title: "Postman",
+    description: "API Testing",
+    href: "/images/icons/postman.png",
+  },
+  {
+    title: "Figma",
+    description: "UI/UX Design",
+    href: "/images/icons/figma.jpg",
+  },
+  {
+    title: "ERPNext",
+    description: "ERP Platform",
+    href: "/images/icons/erpnext.png",
+  },
+  {
+    title: "Frappe",
+    description: "Full-Stack Framework",
+    href: "/images/icons/frappe.png",
+  },
+  {
+    title: "MySQL",
+    description: "Database",
+    href: "/images/icons/mysql.webp",
+  },
+  {
+    title: "Redis",
+    description: "Caching",
+    href: "/images/icons/redis.webp",
+  },
+  {
+    title: "Nginx",
+    description: "Web Server",
+    href: "/images/icons/nginx.webp",
+  },
+  {
+    title: "Vercel",
+    description: "Deployment",
+    href: "/images/icons/vercel.webp",
+  },
+  {
+    title: "DigitalOcean",
+    description: "Cloud Hosting",
+    href: "/images/icons/digital_ocean.webp",
+  },
+  {
+    title: "Notion",
+    description: "Documentation",
+    href: "/images/icons/notion.webp",
+  },
+  {
+    title: "Excalidraw",
+    description: "Flow Charting",
+    href: "/images/icons/excalidraw.webp",
   },
 ];
