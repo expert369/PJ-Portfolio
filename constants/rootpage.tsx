@@ -403,3 +403,42 @@ export const tools: Tools[] = [
     href: "/images/icons/excalidraw.webp",
   },
 ];
+
+export const techStack = [
+  "Frappe",
+  "ERPNext",
+  "LLM",
+  "React",
+  "Next.js",
+  "TypeScript",
+  "MariaDB",
+  "Redis",
+  "WebSocket",
+  "NGINX",
+  "WSL",
+  "Ubuntu",
+  "Docker",
+]
+
+export const aboutSections = [
+  {
+    title: "Who I am",
+    description:
+      "I'm Peter John Alado, a Full-Stack Developer with a passion for building software that solves real business problems. I enjoy transforming complex requirements into clean, scalable solutions, whether it's developing ERP systems, modern web applications, or AI-powered tools. I'm always looking for opportunities to learn, improve, and create products that make a meaningful impact.",
+  },
+  {
+    title: "What I do",
+    description:
+      "I specialize in Frappe Framework and ERPNext development, building custom modules, reports, integrations, and business workflows tailored to each organization's needs. Beyond ERP, I develop modern web applications using React, Next.js, and TypeScript, while also exploring AI automation, cloud deployment, Docker, and backend infrastructure to deliver complete end-to-end solutions.",
+  },
+  {
+    title: "My Journey",
+    description:
+      "My journey started with a curiosity for programming and gradually evolved into a career focused on enterprise software development. From creating websites and business applications to leading ERPNext implementations and mentoring junior developers, every project has strengthened my technical skills and reinforced my passion for building software that improves the way people work.",
+  },
+  {
+    title: "Beyond Code",
+    description:
+      "When I'm not coding, you'll probably find me exploring new places, cycling, listening to music, or learning about emerging technologies. I believe maintaining a balance between work and personal interests helps me stay creative, continuously improve, and bring fresh ideas into every project I work on.",
+  },
+];
