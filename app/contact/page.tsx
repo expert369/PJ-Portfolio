@@ -23,9 +23,7 @@ export default function Contact() {
             position: "bottom-right",
             autoClose: 3000,
             className:
-                "rounded-xl border border-zinc-700 bg-zinc-900 shadow-xl",
-            bodyClassName: "text-sm font-medium text-white",
-            progressClassName: "bg-emerald-500",
+                "rounded-xl border border-zinc-700 bg-zinc-900 text-sm font-medium text-white shadow-xl",
         });
     };
 
