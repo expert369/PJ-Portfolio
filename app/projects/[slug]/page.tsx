@@ -1,7 +1,8 @@
 import { notFound } from "next/navigation"
 import { projects } from "@/constants/rootpage";
 import { Button } from "@/components/ui/moving-border";
-import { BackgroundBeams } from "@/components/ui/background-beams";
+import dynamic from "next/dynamic"
+const BackgroundBeams = dynamic(() => import("@/components/ui/background-beams").then((m) => ({ default: m.BackgroundBeams })))
 import Image from "next/image";
 import Link from "next/link";
 

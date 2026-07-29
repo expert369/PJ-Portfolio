@@ -114,6 +114,13 @@ const MetaBalls = ({
     const container = containerRef.current;
     if (!container) return;
 
+    let isVisible = true;
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => { isVisible = entry.isIntersecting; },
+      { threshold: 0 }
+    );
+    visibilityObserver.observe(container);
+
     const dpr = 1;
     const renderer = new Renderer({ dpr, alpha: true, premultipliedAlpha: false });
     const gl = renderer.gl;
@@ -217,6 +224,7 @@ const MetaBalls = ({
     let animationFrameId;
     function update(t) {
       animationFrameId = requestAnimationFrame(update);
+      if (!isVisible) return;
       const elapsed = (t - startTime) * 0.001;
       program.uniforms.iTime.value = elapsed;
 
@@ -253,6 +261,7 @@ const MetaBalls = ({
 
     return () => {
       cancelAnimationFrame(animationFrameId);
+      visibilityObserver.disconnect();
       window.removeEventListener('resize', resize);
       container.removeEventListener('pointermove', onPointerMove);
       container.removeEventListener('pointerenter', onPointerEnter);

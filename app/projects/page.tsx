@@ -1,4 +1,3 @@
-'use client'
 import { projects } from "@/constants/rootpage"
 import { ProjectCard } from "@/components/ProjectCard" 
 import { StarsBackground } from "@/components/ui/stars-background"

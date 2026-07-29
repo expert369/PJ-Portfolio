@@ -3,7 +3,8 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { FaCheckCircle } from "react-icons/fa";
 import { Spotlight } from "@/components/ui/spotlight";
-import { Cover } from "@/components/ui/cover";
+import dynamic from "next/dynamic";
+const Cover = dynamic(() => import("@/components/ui/cover").then((m) => ({ default: m.Cover })), { ssr: false });
 import { PointerHighlight } from "@/components/ui/pointer-highlight";
 import { HoverBorderGradient } from "@/components/ui/hover-border-gradient";
 import { useState } from "react";
@@ -78,6 +79,7 @@ export default function Home() {
             loop
             muted
             playsInline
+            preload="metadata"
             className="object-contain w-full rounded-t-xl"
           >
             <source src="/videos/erp-demo.mp4" type="video/mp4" />

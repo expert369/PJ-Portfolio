@@ -1,3 +1,4 @@
+"use client";
 import { FollowerPointerCard } from "./ui/following-pointer";
 import type { Projects } from "@/constants/rootpage";
 import { useRouter } from "next/navigation";

@@ -1,4 +1,3 @@
-'use client'
 import { Timeline } from "@/components/ui/timeline";
 import { data } from "@/constants/rootpage";
 

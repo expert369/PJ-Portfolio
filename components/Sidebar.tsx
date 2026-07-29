@@ -1,7 +1,8 @@
 "use client";
 import TypingText from "./TypingText";
 import { useState, useEffect } from "react";
-import MetaBalls from "./MetaBalls";
+import dynamic from "next/dynamic";
+const MetaBalls = dynamic(() => import("./MetaBalls"), { ssr: false });
 import { navItems, socials } from "@/constants/rootpage";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
@@ -151,21 +152,7 @@ const Sidebar = () => {
         transform transition-transform 
         duration-300 ease-in-out` }>
             <div className="px-6 py-8 flex-col">
-                <div className="flex">
-                    <div className="w-14 h-14">
-                        <MetaBalls
-                            color="#ffffff"
-                            cursorBallColor="#ffffff"
-                            cursorBallSize={5}
-                            ballCount={15}
-                            animationSize={30}
-                            enableMouseInteraction
-                            enableTransparency={true}
-                            hoverSmoothness={0.15}
-                            clumpFactor={1}
-                            speed={1}
-                        />
-                    </div>
+                <div className="flex items-center gap-2">
                     <div>
                         <h3>Peter John Alado</h3>
                         <TypingText />

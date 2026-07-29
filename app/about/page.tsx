@@ -1,5 +1,6 @@
 'use client'
 import StackBadge from "@/components/ui/StackBadge"
+import { BackgroundBeamsWithCollision } from "@/components/ui/background-beams-with-collision"
 import { techStack, aboutSections } from "@/constants/rootpage"
 import AboutInfo from "@/components/ui/AboutInfo"
 import Link from "next/link"
@@ -12,7 +13,9 @@ export default function About() {
     }
 
     return (
-        <div className="mb-8 mx-50 max-w-[900] max-sm:mx-10 pt-15 max-sm:pt-35 gap-3 z-55">
+        <div className="mb-8 mx-50 max-w-[900px] max-sm:mx-10 pt-15 max-sm:pt-35 gap-3 z-55">
+            <BackgroundBeamsWithCollision className="bg-black">
+
             <div className="px-25 max-sm:px-2 flex flex-col gap-4">
                 <div className="text-6xl max-sm:text-4xl font-bold">Peter John Alado</div>
                 <div className="flex gap-2">
@@ -47,6 +50,7 @@ export default function About() {
                     </button>                    
                 </div>
             </div>
+            </BackgroundBeamsWithCollision>
         </div>
     )    
 }

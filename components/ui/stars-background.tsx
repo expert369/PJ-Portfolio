@@ -107,8 +107,17 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
     if (!ctx) return;
 
     let animationFrameId: number;
+    let isVisible = true;
+
+    const visibilityObserver = new IntersectionObserver(
+      ([entry]) => { isVisible = entry.isIntersecting; },
+      { threshold: 0 }
+    );
+    visibilityObserver.observe(canvas);
 
     const render = () => {
+      animationFrameId = requestAnimationFrame(render);
+      if (!isVisible) return;
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       stars.forEach((star) => {
         ctx.beginPath();
@@ -123,13 +132,13 @@ export const StarsBackground: React.FC<StarBackgroundProps> = ({
         }
       });
 
-      animationFrameId = requestAnimationFrame(render);
     };
 
     render();
 
     return () => {
       cancelAnimationFrame(animationFrameId);
+      visibilityObserver.disconnect();
     };
   }, [stars]);
 
