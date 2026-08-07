@@ -94,6 +94,25 @@ export const projects: Projects[] = [
     ],
   },
   {
+    title: "PetFlex",
+    sub_description: "Stream Movies & TV Shows",
+    description:
+    "A movie and TV show streaming web application that lets users discover movies and series, browse popular titles, search for content, and watch selected titles through a clean and responsive interface.",
+    image: "/images/petflex.png",
+    url: "https://petflex-staging.vercel.app/",
+    slug: "petflex",
+    techstack: [
+    "React",
+    "NextJs",
+    "TypeScript",
+    "Tailwind CSS",
+    "TMDB API",
+    "VidSrc",
+    "REST API",
+    "Responsive Design",
+    ],
+  },
+  {
     title: "Lyka Artspace",
     sub_description: "Creative Portfolio Landing Page",
     description:
